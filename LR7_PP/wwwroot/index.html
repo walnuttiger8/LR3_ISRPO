@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Шарипов Булат гр.4332</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Магазин табака</h1>
+        </div>
+    </header>
+    <section id="create-tobacco" class="mb-5">
+        <div class="container">
+            <h2>Добавить табак</h2>
+
+            <form id="createTobaccoForm">
+                <div class="mb-3 col-8">
+                    <label for="createTobaccoManufacturer" class="form-label">Производитель</label>
+                    <input type="text" class="form-control" id="createTobaccoManufacturer">
+                </div>
+                <div class="mb-3 col-8">
+                    <label for="createTobaccoName" class="form-label">Наименование</label>
+                    <input type="text" class="form-control" id="createTobaccoName">
+                </div>
+                <div class="mb-3 col-8">
+                    <label for="createTobaccoPrice" class="form-label">Стоимость</label>
+                    <input type="number" class="form-control" id="createTobaccoPrice">
+                </div>
+                <div class="mb-3 col-8">
+                    <label for="createTobaccoStrength" class="form-label">Крепкость</label>
+                    <input type="range" class="form-range" min="1" max="10" step="1" id="createTobaccoStrength">
+                </div>
+                <div class="mb-3 col-8">
+                    <label for="createTobaccoImage" class="form-label">Изображение</label>
+                    <input class="form-control" type="file" id="createTobaccoImage">
+                </div>
+                <button class="btn btn-primary col-8" id="createTobaccoButton">Добавить</button>
+            </form>
+        </div>
+    </section>
+    <section id="update-tobacco" class="mb-5">
+        <div class="container">
+            <h2>Обновить табак</h2>
+
+            <form id="updateTobaccoForm">
+                <div class="mb-3 col-8">
+                    <label for="updateTobaccoId" class="form-label">Id</label>
+                    <input type="text" class="form-control" id="updateTobaccoId">
+                </div>
+                <div class="mb-3 col-8">
+                    <label for="updateTobaccoManufacturer" class="form-label">Производитель</label>
+                    <input type="text" class="form-control" id="updateTobaccoManufacturer">
+                </div>
+                <div class="mb-3 col-8">
+                    <label for="updateTobaccoName" class="form-label">Наименование</label>
+                    <input type="text" class="form-control" id="updateTobaccoName">
+                </div>
+                <div class="mb-3 col-8">
+                    <label for="updateTobaccoPrice" class="form-label">Стоимость</label>
+                    <input type="number" class="form-control" id="updateTobaccoPrice">
+                </div>
+                <div class="mb-3 col-8">
+                    <label for="updateTobaccoStrength" class="form-label">Крепкость</label>
+                    <input type="range" class="form-range" min="1" max="10" step="1" id="updateTobaccoStrength">
+                </div>
+                <div class="mb-3 col-8">
+                    <label for="updateTobaccoImage" class="form-label">Изображение</label>
+                    <input class="form-control" type="file" id="updateTobaccoImage">
+                </div>
+                <button class="btn btn-success col-8" id="updateTobaccoButton">Обновить</button>
+            </form>
+        </div>
+    </section>
+    <section id="delete-tobacco">
+        <div class="container">
+            <h2>Удалить табак</h2>
+
+            <form id="deleteTobaccoForm">
+                <div class="mb-3 col-8">
+                    <label for="deleteTobaccoId" class="form-label">Id</label>
+                    <input type="text" class="form-control" id="deleteTobaccoId">
+                </div>
+                <button class="btn btn-danger col-8" id="deleteTobaccoButton">Удалить</button>
+            </form>
+        </div>
+    </section>
+    <section id="tobacco-list" class="mt-5">
+        <div class="container">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Производитель</th>
+                        <th scope="col">Наименование</th>
+                        <th scope="col">Цена</th>
+                        <th scope="col">Крепкость</th>
+                        <th scope="col">Изображение</th>
+                    </tr>
+                </thead>
+                <tbody id="tobacco-table-body">
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
